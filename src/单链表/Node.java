@@ -18,7 +18,9 @@ public class Node {
     public int getData() {
         return data;
     }
-
+    public Node getNextNode() {
+        return this.nextNode;
+    }
     public Node append(Node node) {
         Node currentNode = this;
         while (true) {
@@ -36,25 +38,40 @@ public class Node {
         return this;
     }
 
-    public Node getNextNode() {
-        return this.nextNode;
+    public void removeNode(){
+        Node currentNode = this;
+        Node next = nextNode.nextNode;
+        this.nextNode = next;
     }
 
+    public void show() {
+        Node currentNode = this;
+        while (true) {
+            System.out.println(currentNode.getData());
+            currentNode = currentNode.getNextNode();
+            if (currentNode == null) {
+                break;
+            }
+        }
+    }
 
     public static void main(String[] args) {
         Node node1 = new Node(1);
         Node node2 = new Node(2);
         Node node3 = new Node(3);
-        //把node2的地址添加到node1
-        node1.append(node2);
-        //把node3的地址添加到node2
-        node2.append(node3);
-        System.out.println(node1.getData());
-        System.out.println(node1);
-        System.out.println(node1.getNextNode().getNextNode().getData());
+//        //把node2的地址添加到node1
+//        node1.append(node2);
+//        //把node3的地址添加到node2
+//        node2.append(node3);
+//        System.out.println(node1.getData());
+//        System.out.println(node1);
+//        System.out.println(node1.getNextNode().getNextNode().getData());
 
         System.out.println("================");
-        node1.append(node2).append(node3);
-        System.out.println(node3.getNextNode());
+        node1.append(node2).append(node3).append(new Node(4));
+//        System.out.println(node3.getNextNode().getData());
+
+        node2.removeNode();
+        node1.show();
     }
 }
