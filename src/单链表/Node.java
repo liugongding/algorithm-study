@@ -7,7 +7,7 @@ package 单链表;
  */
 public class Node {
 
-    //节点内容,
+    //节点内容
     int data;
     //下一个节点
     Node nextNode;
