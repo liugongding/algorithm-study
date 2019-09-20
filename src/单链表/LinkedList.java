@@ -127,6 +127,7 @@ public class LinkedList {
                 previousNode = currentNode;
                 //把上一次的后继节点的下一个节点设置为指针移动的后继节点
                 nextNode = nextNode.getNextNode();
+                //指针移动
                 currentNode = currentNode.getNextNode();
             }
         }
