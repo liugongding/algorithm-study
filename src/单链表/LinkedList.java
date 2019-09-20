@@ -125,7 +125,7 @@ public class LinkedList {
                 }
                 //指针向前移动一位、我们把上一次的当前节点设置为下一个节点的前驱节点
                 previousNode = currentNode;
-                //把上一次的后继节点的下一个节点设置为指针移动的后继节点
+                //把上一次的后继节点的下一个节点设置为指针移动的后继节点,
                 nextNode = nextNode.getNextNode();
                 //指针移动
                 currentNode = currentNode.getNextNode();

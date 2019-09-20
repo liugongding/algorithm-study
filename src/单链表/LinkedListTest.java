@@ -18,8 +18,8 @@ public class LinkedListTest {
         linkedList.addTail(4);
         linkedList.addTail(5);
 
-//        linkedList.removeNode(3);
-//        linkedList.addMiddle(3,99);
+        linkedList.removeNode(3);
+        linkedList.addMiddle(3,99);
         linkedList.printElement();
     }
 
