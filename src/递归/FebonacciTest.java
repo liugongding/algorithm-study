@@ -8,7 +8,7 @@ package 递归;
 public class FebonacciTest {
 
     public static int febonacci(int i){
-        // 1 1 2 3 5 8 13 21
+        // 1 1 2 3 5 8 13 21 34
         if (i == 1 || i == 2) {
             return 1;
         } else {
