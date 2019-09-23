@@ -31,7 +31,7 @@ public class Hanoi {
 //            ++sum;
         } else {
             //移动上面所有的盘子到中间柱子
-            // in 即C是辅助柱子
+            // to 即C是辅助柱子
             move(n - 1, from, to, in);
             //移动下面的盘子到目标柱子
             System.out.println("第" + n + "个盘子从" + from + "移动到" + to);
