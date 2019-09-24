@@ -45,7 +45,7 @@ public class BinaryTreeTest {
         System.out.println("—————————————————");
 
         //前序查找
-        TreeNode result = binaryTree.frontSearch(1);
+        TreeNode result = binaryTree.frontSearch(7);
         System.out.println(result);
     }
 }
