@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class BubbleSort {
 
     /**
-     * 5, 7, 2, 9, 4, 1, 0, 5, 7
+     * 5, 7, 2, 9, 4, 1, 0, 5,7
      * 总共比较arr.length-1轮，第一个数自己不和自己比较，比较完之后，最大的数就放到了最后面
      *
      * @param arr
