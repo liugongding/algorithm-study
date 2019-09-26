@@ -11,7 +11,6 @@ public class QuickSort {
 
     /**
      * left表示左边第一个数，right表示右边的第一个数据
-     *
      * @param arr
      * @param left
      * @param right
