@@ -19,7 +19,7 @@ public class QuickSort {
     static void quickSort(int arr[], int left, int right) {
         int i, j, key;
         if (left > right) {
-            return ;
+            return;
         }
         //基准数
         key = arr[left];
