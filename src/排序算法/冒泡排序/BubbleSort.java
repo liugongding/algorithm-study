@@ -1,4 +1,4 @@
-package 排序算法;
+package 排序算法.冒泡排序;
 
 import java.util.Arrays;
 
