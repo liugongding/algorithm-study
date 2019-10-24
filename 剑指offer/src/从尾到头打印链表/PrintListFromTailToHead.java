@@ -14,21 +14,27 @@ import java.util.List;
  */
 public class PrintListFromTailToHead {
 
-    //链表作为入参
-    public  ArrayList<Integer> printListFromTailToHead1(ArrayList<Integer> arrayList) {
+
+    /**
+     * 方法一
+     *
+     * @param arrayList
+     * @return
+     */
+    public ArrayList<Integer> printListFromTailToHead1(ArrayList<Integer> arrayList) {
         ArrayList<Integer> newArrayList = new ArrayList<>();
 //            arrayList.forEach(item -> {
 //                newArrayList.add(0,item);
 //            });
         for (int i = 0; i < arrayList.size(); i++) {
-            newArrayList.add(0,arrayList.get(i));
+            newArrayList.add(0, arrayList.get(i));
         }
         newArrayList.forEach(item -> System.out.println(item));
         return newArrayList;
     }
 
     @Test
-    public  void testprintListFromTailToHea1() {
+    public void testprintListFromTailToHea1() {
         ArrayList<Integer> arrayList = new ArrayList<>();
         arrayList.add(1);
         arrayList.add(2);
@@ -37,14 +43,31 @@ public class PrintListFromTailToHead {
         printListFromTailToHead1(arrayList);
     }
 
-    //节点作为入参
-    //这里我们没有ListNode的类
-//    public  ArrayList<Integer> printListFromTailToHead2(ListNode listNode) {
-//        ArrayList<Integer> arrayList = new ArrayList<>();
-//        while (listNode != null) {
-//            arrayList.add(0, listNode.val);
-//            listNode = listNode.next;
-//        }
-//        return arrayList;
-//    }
+
+    // ====================================================================================
+
+
+    public class ListNode {
+        int val;
+        ListNode next = null;
+
+        ListNode(int val) {
+            this.val = val;
+        }
+    }
+
+    /**
+     * 节点作为入参
+     *
+     * @param listNode
+     * @return
+     */
+    public ArrayList<Integer> printListFromTailToHead2(ListNode listNode) {
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        while (listNode != null) {
+            arrayList.add(0, listNode.val);
+            listNode = listNode.next;
+        }
+        return arrayList;
+    }
 }
