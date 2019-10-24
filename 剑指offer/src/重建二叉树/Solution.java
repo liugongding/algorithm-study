@@ -7,7 +7,8 @@ import java.util.Arrays;
 /**
  * @author liudingding
  * @ClassName ReConstructBinaryTree
- * @description 这里介绍一个jdk的函数 Arrays.copyOfRange(T[] original,int from,int to)
+ * @description
+ * 这里介绍一个jdk的函数 Arrays.copyOfRange(T[] original,int from,int to)
  * 将原数组 original,从下标 from 开始，下表 to 结束，注意是左闭右开，即不包含下标 to 的元素，进行复制
  * @date 2019/10/24 10:14
  * Version 1.0
