@@ -22,6 +22,12 @@ import org.junit.Test;
  * Version 1.0
  */
 public class Solution {
+
+    /**
+     * 标记节点发
+     * @param head
+     * @return
+     */
     public ListNode ReverseList(ListNode head) {
         //考虑链表为空或只有一个节点的情况
         if (head == null || head.next == null){
