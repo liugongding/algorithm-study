@@ -79,7 +79,17 @@ public class LinkedList {
         last = null;
         size = 0;
     }
-
+    public void addHead(int element){
+        if (size == 0) {
+            oneNode(element);
+        } else {
+            Node node = new Node();
+            node.setData(element);
+            node.setNextNode(first);
+            first = node;
+        }
+        size++;
+    }
     /**
      * 尾插法
      *
@@ -91,6 +101,7 @@ public class LinkedList {
         } else {
             Node node = new Node();
             node.setData(element);
+            //将新节点设置为尾节点的下一个节点
             last.setNextNode(node);
             last = node;
         }
@@ -133,6 +144,10 @@ public class LinkedList {
         }
     }
 
+    /**
+     * 删除节点
+     * @param index
+     */
     public void removeNode(int index) {
         if (index < 1 || index > getSize()) {
             throw new RuntimeException("插入位置不合法");

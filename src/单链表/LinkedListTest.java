@@ -18,9 +18,18 @@ public class LinkedListTest {
         linkedList.addTail(4);
         linkedList.addTail(5);
 
-        linkedList.removeNode(3);
-        linkedList.addMiddle(3,99);
+//        linkedList.removeNode(3);
+//        linkedList.addMiddle(3,99);
         linkedList.printElement();
     }
 
+    @Test
+    public void addHead(){
+        LinkedList linkedList = new LinkedList();
+        linkedList.addHead(9);
+        linkedList.addHead(8);
+        linkedList.addHead(7);
+        linkedList.printElement();
+
+    }
 }
