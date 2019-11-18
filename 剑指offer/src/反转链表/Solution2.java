@@ -11,6 +11,11 @@ import org.junit.Test;
  */
 public class Solution2 {
 
+    /**
+     * 头插法
+     * @param head
+     * @return
+     */
     public ListNode ReverseList1(ListNode head) {
         ListNode newList = new ListNode(-1);
         while (head != null) {
