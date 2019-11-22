@@ -34,6 +34,7 @@ public class Solution {
         int left = 0;
         //列
         int right = matrix[0].length - 1;
+        //遍历二维数组
         Arrays.stream(matrix).flatMap(c -> Stream.of(c)).map(c -> Arrays.toString(c)).forEach(System.out::println);
         while (up <= down && left <= right) {
             //最上面一行
