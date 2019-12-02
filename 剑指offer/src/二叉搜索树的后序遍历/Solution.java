@@ -57,7 +57,7 @@ public class Solution {
 
     @Test
     public void test(){
-        int [] sequence = {};
+        int [] sequence = {3, 4, 9, 5, 12, 11, 10};
         System.out.println(VerifySquenceOfBST(sequence));
     }
 }
