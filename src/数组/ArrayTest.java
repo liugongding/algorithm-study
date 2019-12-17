@@ -150,8 +150,8 @@ public class ArrayTest {
                     //中间这个元素已经找过了、把他前移一位
                     end = mid - 1;
                 }
-                mid = (start + end) / 2;
             }
+            mid = (start + end) / 2;
         }
     }
 }
