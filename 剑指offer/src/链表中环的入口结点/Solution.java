@@ -33,29 +33,13 @@ public class Solution {
         ListNode fast = pHead;
         ListNode slow = pHead;
         do {
-            fast = fast.next.next.next;
+            fast = fast.next.next;
             slow = slow.next;
         } while (fast.val != slow.val);
         fast = pHead;
         while (fast.val != slow.val){
             fast = fast.next;
             slow = slow.next;
-        }
-        return slow;
-    }
-
-    public ListNode EntryNodeOfLoop1(ListNode pHead) {
-        if (pHead == null || pHead.next == null)
-            return null;
-        ListNode slow = pHead, fast = pHead;
-        do {
-            fast = fast.next.next;
-            slow = slow.next;
-        } while (slow != fast);
-        fast = pHead;
-        while (slow != fast) {
-            slow = slow.next;
-            fast = fast.next;
         }
         return slow;
     }
@@ -79,7 +63,6 @@ public class Solution {
         z1.next = z2;
         z2.next = y1;
 
-        ListNode a = EntryNodeOfLoop1(x1);
-        System.out.println(a);
+        ListNode a = EntryNodeOfLoop(x1);
     }
 }
